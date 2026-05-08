@@ -1,6 +1,9 @@
 # NOAA-PMEL-OME-Komai-MiDeca-mt16S-PCR-Protocol-BeBOP
 NOAA PMEL OME BeBOP PCR Protocol for the Komai_MiDeca_mt16S marker
 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20076918.svg)](https://doi.org/10.5281/zenodo.20076918)
+
 # NOAA-PMEL-OME-WhiteSterling-phytoplankton-ITS1-PCR-Protocol-BeBOP
 
 See [NOAA-PMEL-OME-Komai-MiDeca-mt16S-PCR-Protocol-BeBOP.md](https://github.com/marinednadude/NOAA-PMEL-OME-Komai-MiDeca-mt16S-PCR-Protocol-BeBOP/blob/main/NOAA-PMEL-OME-Komai-MiDeca-mt16S-PCR-Protocol-BeBOP.md) for detailed protocol.  
