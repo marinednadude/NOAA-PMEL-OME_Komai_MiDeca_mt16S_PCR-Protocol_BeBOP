@@ -27,17 +27,17 @@ pcr_0_1: 1
 inhibition_check_0_1: not applicable
 inhibition_check: not applicable
 thermocycler: Applied Biosystems Veriti 96-well thermal cycler
-assay_name: MiDeca (CHANGE)
+assay_name: Komai_MiDeca_mt16S
 assay_validation: The assay has been validated through multi-step in-silico, in-vitro, and in-situ validations. In addition to repeat analysis with alternate assays and intra/inter species tests. See BeBOP for citations.
-targetTaxonomicAssay: 16S rRNA sequencing using primers MiDeca-F and MiDeca-R (CHANGE)
+targetTaxonomicAssay: 16S rRNA sequencing using primers Komai_MiDeca_mt16S-F and Komai_MiDeca_mt16S-R
 targetTaxonomicScope: Order Decapoda
 target_gene: 16S
-target_subfragment: (CHANGE)
+target_subfragment: not applicable
 ampliconSize: 148-189
-pcr_primer_forward: MiDeca-F (CHANGE)
-pcr_primer_reverse: MiDeca-R (CHANGE)
-pcr_primer_name_forward: GGACGATAAGACCCTATAAA
-pcr_primer_name_reverse: ACGCTGTTATCCCTAAAGT
+pcr_primer_forward: GGACGATAAGACCCTATAAA
+pcr_primer_reverse: ACGCTGTTATCCCTAAAGT
+pcr_primer_name_forward: Komai_MiDeca_mt16S-F
+pcr_primer_name_reverse: Komai_MiDeca_mt16S-R
 pcr_primer_reference_forward: https://doi.org/10.3897/mbmg.3.33835
 pcr_primer_reference_reverse: https://doi.org/10.3897/mbmg.3.33835
 pcr_primer_vol_forward: 1.25
@@ -57,7 +57,7 @@ block_taxa: not applicable
 amplificationReactionVolume: 25
 pcr_dna_vol: 2.0
 pcr_rep: 1.0
-nucl_acid_amp: (CHANGE)
+nucl_acid_amp: https://doi.org/10.5281/zenodo.17612116
 pcr_cond: initial denaturation:98_0.5;normal_cycling;denaturation:98_0.17;annealing:60_0.5;elongation:72_0.75;final elongation:72_10;35
 annealingTemp: 60
 pcr_cycles: 35
@@ -155,17 +155,17 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 
 ### Summary
 
-This protocol is for amplifying a highly variable region in the 16S small ribosomal subunit RNA gene in decapods. The primers (forward: MiDeca-F (CHANGE), reverse: MiDeca-R (CHANGE)) were first presented in [Komai et al. 2024](https://mbmg.pensoft.net/article/33835/). The target amplicon size is 148-189 base pairs.
+This protocol is for amplifying a highly variable region in the 16S small ribosomal subunit RNA gene in decapods. The primers (forward: Komai_MiDeca_mt16S-F, reverse: Komai_MiDeca_mt16S-R) were first presented in [Komai et al. 2024](https://mbmg.pensoft.net/article/33835/). The target amplicon size is 148-189 base pairs.
 
 The protocol presented here is intended as the first PCR of a two-step PCR next-generation sequencing library preparation using Illumina Nextera Unique Dual Indices. Our written protocol does not include the second PCR step in which unique library-specific barcodes are attached to each round 1 PCR product. 
 
 ### Method Description and Rationale
 
-This protocol was chosen because it successfully amplifies decapod species in an eDNA oe tissue. Our protocol uses the same primers as Komai et al. 2024. Our protocol uses the same polymerase and thermocycling conditions as MMARINeDNA 12S MiFish protocol, but is 25 µL in total reaction volume. We intentionally chose this protocol to facilitate greater recovery and resolution of decapod species from PMEL OME eDNA time series.
+This protocol was chosen because it successfully amplifies decapod species in both eDNA and tissue samples. Our protocol uses the same primers as Komai et al. 2024. Our protocol uses the same polymerase and thermocycling conditions as MMARINeDNA 12S MiFish protocol, but is 25 µL in total reaction volume. We intentionally chose this protocol to facilitate greater recovery and resolution of decapod species from PMEL OME eDNA time series, particularly in the recovery of decapod zooplankton taxa.
 
 ### Spatial Coverage and Environment(s) of Relevance
 
-This protocol has been used to amplify extracted DNA from hundreds of filtered seawater samples and plankton net tow samples taken from coastal stations off the western coast of North America in the Northeastern Pacific Ocean, Bering Sea, and Arctic Ocean (primarily off California, Oregon, Washington, and Alaska). Samples collected range in depth from surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
+This protocol has been used to amplify extracted DNA from hundreds of bulk plankton net tow samples taken from coastal stations off the western coast of North America in the Northeastern Pacific Ocean (primarily off California, Oregon, Washington). Samples collected range in depth from surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
 
 ### Personnel Required
 
@@ -259,15 +259,15 @@ For a 96-well Plate:
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
-|MiDeca-F (CHANGE)| Forward |**GGACGATAAGACCCTATAAA** |
-|MiDeca-R (CHANGE)| Reverse | **ACGCTGTTATCCCTAAAGT** |
+|Komai_MiDeca_mt16S-F | Forward |**GGACGATAAGACCCTATAAA** |
+|Komai_MiDeca_mt16S-R | Reverse | **ACGCTGTTATCCCTAAAGT** |
 
 **Primer Sequences Used**: PCR primer sequences with Illumina Adapters
 (Adapter sequence + **target sequence bolded**)
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
-|MiDeca-Nex-F (CHANGE)|Forward  | TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG**GGACGATAAGACCCTATAAA** |
-|MiDeca-Nex-R (CHANGE) | Reverse | GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG**ACGCTGTTATCCCTAAAGT** |
+|Komai_MiDeca_mt16S-Nex-F |Forward  | TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG**GGACGATAAGACCCTATAAA** |
+|Komai_MiDeca_mt16S-Nex-R | Reverse | GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG**ACGCTGTTATCCCTAAAGT** |
 
 **Reaction Mixture**: PCR reagents, volumes, initial, and final concentrations
 
@@ -305,7 +305,7 @@ This table breaks down the mixture per plate and per reaction. When running full
 3. Pool reagents to make the final master mix, as denoted in the reagent mixture table.
 4. Set out the template DNA to thaw if frozen.
 5. Aliquot 23 μL of final master mix into each well of the PCR plate. The plate should sit in a cold block to ensure the reagents remain at a low temperature.
-6. Add 2 μL DNA template to each well (See [WhiteSterling phytoplankton ITS1 PCR Draft Protocol Sheet](https://docs.google.com/spreadsheets/d/15mxKM89S4NEhiMFIIUo3bYfYfHoavNpf0fki1TN-LCs/edit#gid=0)), but reserve two wells for the positive control and a no template control (NTC). 
+6. Add 2 μL DNA template to each well (See [NOAA PMEL OME Komai-MiDeca-mt16S PCR Protocol Sheet](https://github.com/marinednadude/NOAA-PMEL-OME-Komai-MiDeca-mt16S-PCR-Protocol-BeBOP/blob/main/NOAA-PMEL-OME-Komai-MiDeca-mt16S%20Protocol%20Sheet.xlsx), but reserve two wells for the positive control and a no template control (NTC). 
 7. To one well, add 2 μL of the positive control. To another well, add 2 μL of nuclease-free water for the NTC.
 8. Seal the PCR plate with foil.
 9. Spin down the plate, and then transport it in cooler blocks before placing it in the thermocycler.
@@ -317,11 +317,11 @@ This table breaks down the mixture per plate and per reaction. When running full
 2. Run gel visualization to confirm successful PCR. [NOAA-PMEL-OME-Gel-Electrophoresis-Protocol](https://github.com/HanWeinrich/NOAA-PMEL-OME-Gel-Electrophoresis-Protocol-BeBOP/blob/main/NOAA-PMEL-OME_Gel_Electrophoresis_Protocol_BeBOP.md)
 
 #### Positive Control
-A positive control is used in every PCR run to verify the success of the PCR reaction. 2μL of positive control diluted to 10^3 copies/µL is used in place of template DNA. One well per plate is allotted for the positive control. The positive control used for WhiteSterling phytoplankton ITS1 is the Antarctic freshwater diatom *Luticola ventricosa*. The reference sequence used to develop the positive control sequence can be found on GenBank: [Accession KY863469.1](https://www.ncbi.nlm.nih.gov/nuccore/KY863469.1)
+A positive control is used in every PCR run to verify the success of the PCR reaction. 2μL of positive control diluted to 10^3 copies/µL is used in place of template DNA. One well per plate is allotted for the positive control. The positive control used for Komai_MiDeca_mt16S is the extinct Wooly Rhino *Coelodonta antiquitatis*. The reference sequence used to develop the positive control sequence can be found on GenBank: [Accession FJ905813.1](https://www.ncbi.nlm.nih.gov/nuccore/FJ905813.1)
 
 |Positive Control Sequence|
 |--------------------------|
-|AAGTTGTTGCAGTTAAAAAGTCCGTAGGTGAACCTGCGGCTTAATTTGACTCAACACGGGGAAACTTACCAGGTCCAGACATAGTGAGGATTGACAGATTAAGAGCTCTTTCTTGATTCTATGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGTTAACGAACGAGACCTCTGCTTGCTAGTTACCCGCAGTAGTGATCCTTCACTGCTGTTTACCTTTACCGGTATAAGGGTTCTAGAAGTACATGTGCTTTGATAGGTGCAGGAAGATAGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCTTACAACTTTCAGCGGTGGATGAAAAGCCTGGGTAATCTTGA|
+|GGACGATAAGACCCTATAAAGCTTTAATCAACTAATTCACAAAGACAAAACCTTCAACCTACACCCAAGGAATAACAAAGATTTGACTGAATTAGCGATTTCGGTTGGGGTGACCTCGGAGAACAAAACAACCTCCGAGTGATTAAATTCTAGACTAACTAGTCAAAAATAATACATCACTTATTGATCCAAACCATTGATCAACGGAACAAGTTACTTTAGGGATAACAGCGT|
 
 #### Negative Control
 
