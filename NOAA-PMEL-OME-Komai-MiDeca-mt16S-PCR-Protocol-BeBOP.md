@@ -1,7 +1,3 @@
----
-title: NOAA PMEL OME MiDeca Protocol Draft
-
----
 
 ---
 #MIOP terms
