@@ -5,7 +5,7 @@ project: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Gr
 purpose: PCR [OBI:0000415]
 analyses: PCR [OBI:0000415]
 geographic_location: North East Pacific Ocean [GAZ:00013765], Bering Sea [GAZ:00008990], Arctic Ocean [GAZ:00000323]
-broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
+broad_scale_environmental_context: marine biome [ENVO:00000447], marine pelagic biome [ENVO:01000023]
 local_environmental_context: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024]
 environmental_medium: sea water [ENVO:00002149]
 target: 16S Mitochondrial Ribosomal RNA [NCIT:C131261]
@@ -15,10 +15,10 @@ skills_required: sterile technique, pipetting skills, standard molecular techniq
 time_required: 170
 personnel_required: 1
 language: en
-issued: 2025-11-13
+issued: 2026-05-13
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
-hasVersion: 1
+hasVersion: 1.1.1
 license: CC0 1.0 Universal
 maturity level: mature
 
@@ -27,17 +27,17 @@ pcr_0_1: 1
 inhibition_check_0_1: not applicable
 inhibition_check: not applicable
 thermocycler: Applied Biosystems Veriti 96-well thermal cycler
-assay_name: MiDeca (CHANGE)
+assay_name: Komai_MiDeca_mt16S
 assay_validation: The assay has been validated through multi-step in-silico, in-vitro, and in-situ validations. In addition to repeat analysis with alternate assays and intra/inter species tests. See BeBOP for citations.
-targetTaxonomicAssay: 16S rRNA sequencing using primers MiDeca-F and MiDeca-R (CHANGE)
+targetTaxonomicAssay: 16S rRNA sequencing using primers Komai_MiDeca_mt16S-F and Komai_MiDeca_mt16S-R
 targetTaxonomicScope: Order Decapoda
 target_gene: 16S
-target_subfragment: (CHANGE)
+target_subfragment: not applicable
 ampliconSize: 148-189
-pcr_primer_forward: MiDeca-F (CHANGE)
-pcr_primer_reverse: MiDeca-R (CHANGE)
-pcr_primer_name_forward: GGACGATAAGACCCTATAAA
-pcr_primer_name_reverse: ACGCTGTTATCCCTAAAGT
+pcr_primer_forward: GGACGATAAGACCCTATAAA
+pcr_primer_reverse: ACGCTGTTATCCCTAAAGT
+pcr_primer_name_forward: Komai_MiDeca_mt16S-F
+pcr_primer_name_reverse: Komai_MiDeca_mt16S-R
 pcr_primer_reference_forward: https://doi.org/10.3897/mbmg.3.33835
 pcr_primer_reference_reverse: https://doi.org/10.3897/mbmg.3.33835
 pcr_primer_vol_forward: 1.25
@@ -57,7 +57,7 @@ block_taxa: not applicable
 amplificationReactionVolume: 25
 pcr_dna_vol: 2.0
 pcr_rep: 1.0
-nucl_acid_amp: (CHANGE)
+nucl_acid_amp: https://doi.org/10.5281/zenodo.17612116
 pcr_cond: initial denaturation:98_0.5;normal_cycling;denaturation:98_0.17;annealing:60_0.5;elongation:72_0.75;final elongation:72_10;35
 annealingTemp: 60
 pcr_cycles: 35
@@ -88,10 +88,10 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
   
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Shannon Brown | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0000-0001-9808-2638 |2024-02-02|
-| Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0009-0007-6063-0986 |2024-02-02|
-|Sean McAllister	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0000-0001-6654-3495	|2024-02-02|
-|Zachary Gold	|Ocean Molecular Ecology, NOAA PMEL	|0000-0003-0490-7630	|2024-02-02|
+| Shannon Brown | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0000-0001-9808-2638 |2025-03-01|
+| Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0009-0007-6063-0986 |2025-03-01|
+|Sean McAllister	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0000-0001-6654-3495	|2025-03-01|
+|Zachary Gold	|Ocean Molecular Ecology, NOAA PMEL	|0000-0003-0490-7630|2025-03-01|
 
 ### Related Protocols
 
@@ -103,6 +103,7 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 | PROTOCOL NAME | LINK         | VERSION      | RELEASE DATE | INTERNAL/EXTERNAL |
 | ------------- | ------------ | ------------ | ------------ | ----------------- |
 | NOAA-PMEL-OME-Gel-Electrophoresis-Protocol | https://github.com/HanWeinrich/NOAA-PMEL-OME-Gel-Electrophoresis-Protocol-BeBOP/blob/main/NOAA-PMEL-OME_Gel_Electrophoresis_Protocol_BeBOP.md | 1.0.1 | 2025-11-06 | Internal  |
+| NOAA-PMEL-OME-MiFish-mod-Universal-Teleost-12S-PCR-Protocol-BeBOP | <https://github.com/marinednadude/NOAA-PMEL-OME-MiFish-mod-Universal-Teleost-12S-PCR-Protocol-BeBOP/blob/main/NOAA-PMEL-OME-MiFish-mod-Universal-Teleost-12S-PCR-Protocol-BeBOP.md> | 1.2.2 | 2026-05-12 | Internal  |
 
 ### Protocol Revision Record
 
@@ -112,17 +113,15 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
-| 1.0.0 | 2024-05-30 | Initial release |
-| 1.1.0 | 2025-05-20 | Addition of FAIR eDNA terms in YAML frontmatter and formatting edits |
-| 1.1.1 | 2025-05-29 | Minor acronym and content revisions  |
-| 1.2.0 | 2025-06-10 | Adding Gel Electrophoresis protocol, new acronym, and updated reaction mixture concentrations |
-| 1.2.1 | 2025-11-06 | Clarified safety guidelines, added freshwater reference, and negative control language |
+| 1.0.0 | 2026-05-08 | Beta release |
+| 1.1.0 | 2026-05-08 | Updated content, FAIRe terms, and general formatting|
+| 1.1.1 | 2026-05-13 | Minor grammatical and formatting corrections|
 
 ### Acronyms and Abbreviations
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-|ITS1  |Internal Transcribed Spacer region 1 |
+|16S  |16S Mitochondrial Ribosomal RNA gene |
 |BSC	|Biosafety cabinet|
 |CICOES| Cooperative Institute for Climate, Ocean, & Ecosystem Studies|
 |DNA	|Deoxyribonucleic acid|
@@ -130,17 +129,14 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 |eDNA	|environmental DNA|
 |EtOH| Ethanol|
 |IDT| Integrated DNA Technologies|
-|MBARI| Monterey Bay Aquarium Research Institute|
-|MBON	|Marine Biodiversity Observation Network|
 |NOAA|National Oceanic and Atmospheric Administration|
 |NTC	|No template control|
 |OME	|Ocean Molecular Ecology|
 |PCR| Polymerase chain reaction |
 |PMEL	|Pacific Marine Environmental Laboratory|
-|PPE    | Personal protective equipment |
+|PPE| Personal protective equipment |
 |UV| Ultraviolet|
 |UW| University of Washington|
-|WC-OBON|West Coast Ocean Biomolecular Observing Network|
 
 ### Glossary
 
@@ -155,17 +151,17 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 
 ### Summary
 
-This protocol is for amplifying a highly variable region in the 16S small ribosomal subunit RNA gene in decapods. The primers (forward: MiDeca-F (CHANGE), reverse: MiDeca-R (CHANGE)) were first presented in [Komai et al. 2024](https://mbmg.pensoft.net/article/33835/). The target amplicon size is 148-189 base pairs.
+This protocol is for amplifying a highly variable region in the 16S small ribosomal subunit RNA gene in decapods. The primers (forward: Komai_MiDeca_mt16S-F, reverse: Komai_MiDeca_mt16S-R) were first presented in [Komai et al. 2024](https://mbmg.pensoft.net/article/33835/). The target amplicon size is 148-189 base pairs.
 
-The protocol presented here is intended as the first PCR of a two-step PCR next-generation sequencing library preparation using Illumina Nextera Unique Dual Indices. Our written protocol does not include the second PCR step in which unique library-specific barcodes are attached to each round 1 PCR product. 
+The protocol presented here is intended as the first PCR of a two-step PCR next-generation sequencing library preparation using Illumina Nextera Unique Dual Indices. Our written protocol does not include the second PCR step, in which unique library-specific barcodes are attached to each round 1 PCR product. 
 
 ### Method Description and Rationale
 
-This protocol was chosen because it successfully amplifies decapod species in an eDNA oe tissue. Our protocol uses the same primers as Komai et al. 2024. Our protocol uses the same polymerase and thermocycling conditions as MMARINeDNA 12S MiFish protocol, but is 25 µL in total reaction volume. We intentionally chose this protocol to facilitate greater recovery and resolution of decapod species from PMEL OME eDNA time series.
+This protocol was chosen because it successfully amplifies decapod species in both eDNA and tissue samples. Our protocol uses the same primers as [Komai et al. 2024](https://mbmg.pensoft.net/article/33835/). Our protocol uses the same polymerase and thermocycling conditions as our [MiFish 12S protocol](https://github.com/marinednadude/NOAA-PMEL-OME-MiFish-mod-Universal-Teleost-12S-PCR-Protocol-BeBOP/blob/main/NOAA-PMEL-OME-MiFish-mod-Universal-Teleost-12S-PCR-Protocol-BeBOP.md), but the total reaction volume is 25 µL. We intentionally chose this protocol to facilitate greater recovery and resolution of decapod species from PMEL OME eDNA time series, particularly in the recovery of decapod zooplankton taxa.
 
 ### Spatial Coverage and Environment(s) of Relevance
 
-This protocol has been used to amplify extracted DNA from hundreds of filtered seawater samples and plankton net tow samples taken from coastal stations off the western coast of North America in the Northeastern Pacific Ocean, Bering Sea, and Arctic Ocean (primarily off California, Oregon, Washington, and Alaska). Samples collected range in depth from surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
+This protocol has been used to amplify extracted DNA from hundreds of bulk plankton net tow samples taken from coastal stations off the western coast of North America in the Northeastern Pacific Ocean (primarily off California, Oregon, Washington). Samples collected range in depth from surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
 
 ### Personnel Required
 
@@ -196,7 +192,7 @@ For a 96-well Plate:
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment**|
-|Pipetter: 1-10 μl|Pipetman P10L|Gilson|1|Can be substituted with any accurate pipettor|
+|Pipetter: 1-10 μL|Pipetman P10L|Gilson|1|Can be substituted with any accurate pipettor|
 |Pipetter: 20 - 200 μL	|Pipetman P200L|Gilson|	1|Can be substituted with any accurate pipettor|
 |Pipetter: 100-1000 μL	|Pipetman P1000	|Gilson	|1|Can be substituted with any accurate pipettor|
 |BioSafety II cabinet|Biological safety cabinet (INT-1100A2)|Kewaunee|1|Can be substituted with generic - internal UV light required|
@@ -230,17 +226,17 @@ For a 96-well Plate:
 | Writing utensils | Sharpies and pens | Generic | 2 | Dedicated to the lab extraction space. Not made of wood - must be able to be wiped down with bleach/EtOH  |
 |**Optional Equipment**|||			
 |Repeater Pipetter: 10-300  μL|E1-ClipTip electronic single channel pipette, 10-300 μL |ThermoFisher|	1|Can be substituted with generic - not required but reduces protocol time|
-| 300 μl repeater pipette tips | ClipTip 300 filtered sterile tips| Thermo Scientific| 2| Can be substituted with generic. Must fit repeater pipette. Must be sterile and filtered. |
+| 300 μL repeater pipette tips | ClipTip 300 filtered sterile tips| Thermo Scientific| 2| Can be substituted with generic. Must fit repeater pipette. Must be sterile and filtered. |
 |8-channel multichannel pipetter: 1-10 μL| Pipetman Multichannel P8X10|	Gilson|	1|Can be substituted with generic. Not required, but reduces protocol time.|
 | UV crosslinker | UV crosslinker AH (115V), 234100 | Boekel Scientific  | 1 | Can be substituted with generic - recommended not required |
 | **Chemicals** |
-| PCR master mix 2x|Phusion High-Fidelity PCR Master Mix with HF Buffer | New England BioLabs | 1300 μl per plate | Store at -20°C |
-| Forward primer | Custom oligo | IDT |130 μl per plate |Store at -20°C|
-| Reverse primer| Custom oligo | IDT | 130 μl per plate|Store at -20°C|
-| Nuclease free water | UltraPure DNase/RNase-free distilled water | ThermoFisher | 689 μl per plate||
-| rAlbumin |Molecular Biology Grade Recombinant Albumin | New England BioLabs | 65 μl per plate|Store at -20°C|
-|DMSO|Phusion HF PCR Master Mix comes with DMSO|New England Biolabs| 78 μl per plate| Store at 4°C - must be warmed to room temperature to dissolve|
-| Positive control| gBlocks HiFi Gene Fragments | IDT | 2 μl per plate |Store at -20°C |
+| 2X Phusion Master Mix|Phusion High-Fidelity PCR Master Mix with HF Buffer | New England BioLabs | 1300 μL per plate | Store at -20°C |
+| Forward primer | Custom oligo | IDT |130 μL per plate |Store at -20°C|
+| Reverse primer| Custom oligo | IDT | 130 μL per plate|Store at -20°C|
+| Nuclease free water | UltraPure DNase/RNase-free distilled water | ThermoFisher | 689 μL per plate||
+| rAlbumin |Molecular Biology Grade Recombinant Albumin | New England BioLabs | 65 μL per plate|Store at -20°C|
+|DMSO|Phusion HF PCR Master Mix comes with DMSO|New England Biolabs| 78 μL per plate| Store at 4°C - must be warmed to room temperature to dissolve|
+| Positive control| gBlocks HiFi Gene Fragments | IDT | 2 μL per plate |Store at -20°C |
 | 70% EtOH | Molecular grade ethanol| Generic | 40 mL | |
 | 10% bleach| Hypochlorite bleach |Clorox| 40 mL | Remake every ~5 days as bleach decomposes quickly at 10% concentration |
 
@@ -259,15 +255,15 @@ For a 96-well Plate:
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
-|MiDeca-F (CHANGE)| Forward |**GGACGATAAGACCCTATAAA** |
-|MiDeca-R (CHANGE)| Reverse | **ACGCTGTTATCCCTAAAGT** |
+|Komai_MiDeca_mt16S-F | Forward |**GGACGATAAGACCCTATAAA** |
+|Komai_MiDeca_mt16S-R | Reverse | **ACGCTGTTATCCCTAAAGT** |
 
 **Primer Sequences Used**: PCR primer sequences with Illumina Adapters
 (Adapter sequence + **target sequence bolded**)
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
-|MiDeca-Nex-F (CHANGE)|Forward  | TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG**GGACGATAAGACCCTATAAA** |
-|MiDeca-Nex-R (CHANGE) | Reverse | GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG**ACGCTGTTATCCCTAAAGT** |
+|Komai_MiDeca_mt16S-Nex-F |Forward  | TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG**GGACGATAAGACCCTATAAA** |
+|Komai_MiDeca_mt16S-Nex-R | Reverse | GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG**ACGCTGTTATCCCTAAAGT** |
 
 **Reaction Mixture**: PCR reagents, volumes, initial, and final concentrations
 
@@ -301,15 +297,15 @@ This table breaks down the mixture per plate and per reaction. When running full
 *Note: When possible, PCR set-up should be carried out in a separate pre-PCR space that is distinct from the post-PCR space where thermocyclers are located, and all post-PCR processing is performed. No equipment, consumables, or reagents should be shared between pre- and post-PCR spaces with a unidirectional flow of sample processing.*
 
 1. Set out primers and positive control to thaw.
-2. Vortex and spin down thawed positive control, primers, and nuclease-free water. Then tap/flick AmpliTaq rather than vortexing before spinning down. Thawed reagents should be stored in a cooling block or fridge when not in use.
+2. Vortex and spin down thawed positive control, primers, and nuclease-free water. Then tap/flick 2X Phusion Master Mix rather than vortexing before spinning down. Thawed reagents should be stored in a cooling block or fridge when not in use.
 3. Pool reagents to make the final master mix, as denoted in the reagent mixture table.
 4. Set out the template DNA to thaw if frozen.
 5. Aliquot 23 μL of final master mix into each well of the PCR plate. The plate should sit in a cold block to ensure the reagents remain at a low temperature.
-6. Add 2 μL DNA template to each well (See [WhiteSterling phytoplankton ITS1 PCR Draft Protocol Sheet](https://docs.google.com/spreadsheets/d/15mxKM89S4NEhiMFIIUo3bYfYfHoavNpf0fki1TN-LCs/edit#gid=0)), but reserve two wells for the positive control and a no template control (NTC). 
+6. Add 2 μL DNA template to each well (See [NOAA PMEL OME Komai-MiDeca-mt16S PCR Protocol Sheet](https://github.com/marinednadude/NOAA-PMEL-OME_Komai_MiDeca_mt16S_PCR-Protocol_BeBOP/blob/main/NOAA-PMEL-OME_Komai_MiDeca_mt16S_Protocol_Sheet.xlsx), but reserve two wells for the positive control and a no template control (NTC). 
 7. To one well, add 2 μL of the positive control. To another well, add 2 μL of nuclease-free water for the NTC.
-8. Seal the PCR plate with foil.
+8. Seal the PCR plate with foil using the plate sealer.
 9. Spin down the plate, and then transport it in cooler blocks before placing it in the thermocycler.
-10.  Run thermocycler protocol.
+10. Run thermocycler protocol.
 
 ### Quality control
 
@@ -317,11 +313,11 @@ This table breaks down the mixture per plate and per reaction. When running full
 2. Run gel visualization to confirm successful PCR. [NOAA-PMEL-OME-Gel-Electrophoresis-Protocol](https://github.com/HanWeinrich/NOAA-PMEL-OME-Gel-Electrophoresis-Protocol-BeBOP/blob/main/NOAA-PMEL-OME_Gel_Electrophoresis_Protocol_BeBOP.md)
 
 #### Positive Control
-A positive control is used in every PCR run to verify the success of the PCR reaction. 2μL of positive control diluted to 10^3 copies/µL is used in place of template DNA. One well per plate is allotted for the positive control. The positive control used for WhiteSterling phytoplankton ITS1 is the Antarctic freshwater diatom *Luticola ventricosa*. The reference sequence used to develop the positive control sequence can be found on GenBank: [Accession KY863469.1](https://www.ncbi.nlm.nih.gov/nuccore/KY863469.1)
+A positive control is used in every PCR run to verify the success of the PCR reaction. 2μL of positive control diluted to 10^3 copies/µL is used in place of template DNA. One well per plate is allotted for the positive control. The positive control used for Komai_MiDeca_mt16S is the extinct Woolly Rhino *Coelodonta antiquitatis*. The reference sequence used to develop the positive control sequence can be found on GenBank: [Accession FJ905813.1](https://www.ncbi.nlm.nih.gov/nuccore/FJ905813.1)
 
 |Positive Control Sequence|
 |--------------------------|
-|AAGTTGTTGCAGTTAAAAAGTCCGTAGGTGAACCTGCGGCTTAATTTGACTCAACACGGGGAAACTTACCAGGTCCAGACATAGTGAGGATTGACAGATTAAGAGCTCTTTCTTGATTCTATGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGTTAACGAACGAGACCTCTGCTTGCTAGTTACCCGCAGTAGTGATCCTTCACTGCTGTTTACCTTTACCGGTATAAGGGTTCTAGAAGTACATGTGCTTTGATAGGTGCAGGAAGATAGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCTTACAACTTTCAGCGGTGGATGAAAAGCCTGGGTAATCTTGA|
+|GGACGATAAGACCCTATAAAGCTTTAATCAACTAATTCACAAAGACAAAACCTTCAACCTACACCCAAGGAATAACAAAGATTTGACTGAATTAGCGATTTCGGTTGGGGTGACCTCGGAGAACAAAACAACCTCCGAGTGATTAAATTCTAGACTAACTAGTCAAAAATAATACATCACTTATTGATCCAAACCATTGATCAACGGAACAAGTTACTTTAGGGATAACAGCGT|
 
 #### Negative Control
 
@@ -358,3 +354,5 @@ Nuclease-free water is used as a no-template control (NTC) when setting up each 
 1. Komai T, Gotoh RO, Sado T, Miya M (2019) Development of a new set of PCR primers for eDNA metabarcoding decapod crustaceans. Metabarcoding and Metagenomics 3: e33835. https://doi.org/10.3897/mbmg.3.33835
 
 ## APPENDIX A: DATASHEETS
+
+[Komai MiDeca mt16S PCR Protocol Sheet](https://github.com/marinednadude/NOAA-PMEL-OME-Komai-MiDeca-mt16S-PCR-Protocol-BeBOP/blob/main/NOAA-PMEL-OME-Komai-MiDeca-mt16S%20Protocol%20Sheet.xlsx)
