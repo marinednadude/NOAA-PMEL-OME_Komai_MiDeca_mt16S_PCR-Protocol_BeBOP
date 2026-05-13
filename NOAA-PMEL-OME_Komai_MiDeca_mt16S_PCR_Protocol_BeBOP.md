@@ -192,7 +192,7 @@ For a 96-well Plate:
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment**|
-|Pipetter: 1-10 μl|Pipetman P10L|Gilson|1|Can be substituted with any accurate pipettor|
+|Pipetter: 1-10 μL|Pipetman P10L|Gilson|1|Can be substituted with any accurate pipettor|
 |Pipetter: 20 - 200 μL	|Pipetman P200L|Gilson|	1|Can be substituted with any accurate pipettor|
 |Pipetter: 100-1000 μL	|Pipetman P1000	|Gilson	|1|Can be substituted with any accurate pipettor|
 |BioSafety II cabinet|Biological safety cabinet (INT-1100A2)|Kewaunee|1|Can be substituted with generic - internal UV light required|
@@ -226,17 +226,17 @@ For a 96-well Plate:
 | Writing utensils | Sharpies and pens | Generic | 2 | Dedicated to the lab extraction space. Not made of wood - must be able to be wiped down with bleach/EtOH  |
 |**Optional Equipment**|||			
 |Repeater Pipetter: 10-300  μL|E1-ClipTip electronic single channel pipette, 10-300 μL |ThermoFisher|	1|Can be substituted with generic - not required but reduces protocol time|
-| 300 μl repeater pipette tips | ClipTip 300 filtered sterile tips| Thermo Scientific| 2| Can be substituted with generic. Must fit repeater pipette. Must be sterile and filtered. |
+| 300 μL repeater pipette tips | ClipTip 300 filtered sterile tips| Thermo Scientific| 2| Can be substituted with generic. Must fit repeater pipette. Must be sterile and filtered. |
 |8-channel multichannel pipetter: 1-10 μL| Pipetman Multichannel P8X10|	Gilson|	1|Can be substituted with generic. Not required, but reduces protocol time.|
 | UV crosslinker | UV crosslinker AH (115V), 234100 | Boekel Scientific  | 1 | Can be substituted with generic - recommended not required |
 | **Chemicals** |
-| 2X Phusion Master Mix|Phusion High-Fidelity PCR Master Mix with HF Buffer | New England BioLabs | 1300 μl per plate | Store at -20°C |
-| Forward primer | Custom oligo | IDT |130 μl per plate |Store at -20°C|
-| Reverse primer| Custom oligo | IDT | 130 μl per plate|Store at -20°C|
-| Nuclease free water | UltraPure DNase/RNase-free distilled water | ThermoFisher | 689 μl per plate||
-| rAlbumin |Molecular Biology Grade Recombinant Albumin | New England BioLabs | 65 μl per plate|Store at -20°C|
-|DMSO|Phusion HF PCR Master Mix comes with DMSO|New England Biolabs| 78 μl per plate| Store at 4°C - must be warmed to room temperature to dissolve|
-| Positive control| gBlocks HiFi Gene Fragments | IDT | 2 μl per plate |Store at -20°C |
+| 2X Phusion Master Mix|Phusion High-Fidelity PCR Master Mix with HF Buffer | New England BioLabs | 1300 μL per plate | Store at -20°C |
+| Forward primer | Custom oligo | IDT |130 μL per plate |Store at -20°C|
+| Reverse primer| Custom oligo | IDT | 130 μL per plate|Store at -20°C|
+| Nuclease free water | UltraPure DNase/RNase-free distilled water | ThermoFisher | 689 μL per plate||
+| rAlbumin |Molecular Biology Grade Recombinant Albumin | New England BioLabs | 65 μL per plate|Store at -20°C|
+|DMSO|Phusion HF PCR Master Mix comes with DMSO|New England Biolabs| 78 μL per plate| Store at 4°C - must be warmed to room temperature to dissolve|
+| Positive control| gBlocks HiFi Gene Fragments | IDT | 2 μL per plate |Store at -20°C |
 | 70% EtOH | Molecular grade ethanol| Generic | 40 mL | |
 | 10% bleach| Hypochlorite bleach |Clorox| 40 mL | Remake every ~5 days as bleach decomposes quickly at 10% concentration |
 
