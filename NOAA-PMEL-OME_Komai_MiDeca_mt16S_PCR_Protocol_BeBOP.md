@@ -15,7 +15,7 @@ skills_required: sterile technique, pipetting skills, standard molecular techniq
 time_required: 170
 personnel_required: 1
 language: en
-issued: 2026-11-12
+issued: 2026-05-13
 audience: scientists
 publisher: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies
 hasVersion: 1.1.1
@@ -88,10 +88,10 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
   
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Shannon Brown | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0000-0001-9808-2638 |2024-02-02|
-| Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0009-0007-6063-0986 |2024-02-02|
-|Sean McAllister	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0000-0001-6654-3495	|2024-02-02|
-|Zachary Gold	|Ocean Molecular Ecology, NOAA PMEL	|0000-0003-0490-7630	|2024-02-02|
+| Shannon Brown | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0000-0001-9808-2638 |2025-03-01|
+| Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0009-0007-6063-0986 |2025-03-01|
+|Sean McAllister	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0000-0001-6654-3495	|2025-03-01|
+|Zachary Gold	|Ocean Molecular Ecology, NOAA PMEL	|0000-0003-0490-7630|2025-03-01|
 
 ### Related Protocols
 
@@ -115,7 +115,7 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2026-05-08 | Beta release |
 | 1.1.0 | 2026-05-08 | Updated content, FAIRe terms, and general formatting|
-| 1.1.1 | 2026-05-12 | Minor grammatical and formatting corrections|
+| 1.1.1 | 2026-05-13 | Minor grammatical and formatting corrections|
 
 ### Acronyms and Abbreviations
 
