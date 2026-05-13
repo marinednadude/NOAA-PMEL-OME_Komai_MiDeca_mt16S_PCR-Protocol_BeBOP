@@ -305,7 +305,7 @@ This table breaks down the mixture per plate and per reaction. When running full
 3. Pool reagents to make the final master mix, as denoted in the reagent mixture table.
 4. Set out the template DNA to thaw if frozen.
 5. Aliquot 23 μL of final master mix into each well of the PCR plate. The plate should sit in a cold block to ensure the reagents remain at a low temperature.
-6. Add 2 μL DNA template to each well (See [WhiteSterling phytoplankton ITS1 PCR Draft Protocol Sheet](https://docs.google.com/spreadsheets/d/15mxKM89S4NEhiMFIIUo3bYfYfHoavNpf0fki1TN-LCs/edit#gid=0)), but reserve two wells for the positive control and a no template control (NTC). 
+6. Add 2 μL DNA template to each well (See [NOAA-PMEL-OME_Komai_MiDeca_mt16S_Protocol_Sheet](https://github.com/marinednadude/NOAA-PMEL-OME_Komai_MiDeca_mt16S_PCR-Protocol_BeBOP/blob/main/NOAA-PMEL-OME_Komai_MiDeca_mt16S_Protocol_Sheet.xlsx), but reserve two wells for the positive control and a no template control (NTC). 
 7. To one well, add 2 μL of the positive control. To another well, add 2 μL of nuclease-free water for the NTC.
 8. Seal the PCR plate with foil.
 9. Spin down the plate, and then transport it in cooler blocks before placing it in the thermocycler.
